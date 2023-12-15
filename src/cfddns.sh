@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -euo pipefail
+
 [ $# -lt 2 ] && { echo "Usage: cfddns <record> <token>"; exit 1 ; }
 
 REC="${1}"
