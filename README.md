@@ -5,5 +5,5 @@ Simple bash script which updates a cloudflare a record with your current public 
 USAGE:
 
 ```sh
-nix run .#cfddns <record> <token>
+nix run github:hypr-sh/cfddns# <record> <token>
 ```
