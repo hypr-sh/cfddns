@@ -13,7 +13,7 @@
       system: let
         pkgs = import nixpkgs {inherit system;};
         cname = "cfddns";
-        cbuildInputs = with pkgs; [curl jq];
+        cbuildInputs = with pkgs; [awk curl jq];
         cfddns = (pkgs.writeScriptBin cname (builtins.readFile ./src/cfddns.sh)).overrideAttrs (old: {
           buildCommand = "${old.buildCommand}\n patchShebangs $out";
         });
