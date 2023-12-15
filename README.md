@@ -1,6 +1,6 @@
-# cloudflare dynamic dns script wrapped as nixpkg
+# cfddns
 
-Simple nix pkgs to update a given record with the current public ip.
+Simple bash script which updates a cloudflare a record with your current public ip 
 
 USAGE:
 
